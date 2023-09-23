@@ -1,0 +1,28 @@
+// Тема по умолчанию
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    &:focus,
+    &:active{
+        outline: none;
+    }
+}
+html,
+body{
+    height: 100%;
+    background-color: #f2f2f2;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+a{
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}

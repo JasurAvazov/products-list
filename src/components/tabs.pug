@@ -1,0 +1,11 @@
+mixin tabs(categories)
+    .tabs
+        .container
+            .filter
+                label(for="categorySelect") Категория:
+                select(id="categorySelect")
+                    option(value="all") Все категории
+            .pagination 
+                button(type="button")#prevBtn prev
+                #numbs
+                button(type="button")#nextBtn next
