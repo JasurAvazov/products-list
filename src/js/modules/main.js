@@ -91,6 +91,7 @@ export async function init() {
 
 	categorySelect.addEventListener("change", (event) => {
 		const selectedCategory = event.target.value;
+		currentPage = 1;
 		dataTable(selectedCategory);
 	});
 
