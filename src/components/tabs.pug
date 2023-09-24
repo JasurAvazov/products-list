@@ -2,9 +2,9 @@ mixin tabs(categories)
     .tabs
         .container
             .filter
-                label(for="categorySelect") Категория:
-                select(id="categorySelect")
-                    option(value="all") Все категории
+                select#categorySelect
+                    each category in categories
+                        option(value=category)= category
             .pagination 
                 button(type="button")#prevBtn prev
                 #numbs
